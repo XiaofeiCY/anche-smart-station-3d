@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>安车智能检测站 3D 首页原型</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="prototype-shell">
+      <section class="scene-stage" aria-label="安车智能检测站 3D 沙盘原型">
+        <div class="brand-bar">
+          <strong>ANCHE</strong>
+          <span>智能检测站 MVP 原型</span>
+        </div>
+
+        <div class="camera" id="camera">
+          <div class="station-world">
+            <div class="road road-main"></div>
+            <div class="road road-entry"></div>
+            <div class="station-base"></div>
+
+            <div class="building workshop">
+              <div class="roof roof-front"></div>
+              <div class="wall wall-left"></div>
+              <div class="wall wall-right"></div>
+              <div class="sign">机动车检测车间</div>
+            </div>
+
+            <div class="office-block">
+              <span>站端中控</span>
+            </div>
+
+            <div class="gate">
+              <span class="gate-arm"></span>
+              <span class="camera-post"></span>
+              <span class="screen">入口识别</span>
+            </div>
+
+            <div class="lane lane-entry"></div>
+            <div class="lane lane-safety"></div>
+            <div class="lane lane-new-energy"></div>
+            <div class="lane lane-exit"></div>
+
+            <div class="device device-brake" data-label="制动检测"></div>
+            <div class="device device-light" data-label="灯光检测"></div>
+            <div class="device device-chassis" data-label="底盘扫描"></div>
+            <div class="device device-battery" data-label="新能源安全"></div>
+            <div class="device device-control" data-label="数据中控"></div>
+
+            <div class="hud hud-entry">
+              <strong>已建档</strong>
+              <span>分配 2 号检测线</span>
+            </div>
+            <div class="hud hud-safety">
+              <strong>安全检测</strong>
+              <span>制动 / 灯光 / 底盘</span>
+            </div>
+            <div class="hud hud-energy">
+              <strong>新能源专项</strong>
+              <span>电池 / 高压 / 绝缘</span>
+            </div>
+            <div class="hud hud-control">
+              <strong>AI 报告生成</strong>
+              <span>数据汇聚至站长驾驶舱</span>
+            </div>
+
+            <div class="data-line line-a"></div>
+            <div class="data-line line-b"></div>
+            <div class="data-line line-c"></div>
+
+            <div class="car car-primary">
+              <span class="car-roof"></span>
+            </div>
+            <div class="car car-queue">
+              <span class="car-roof"></span>
+            </div>
+            <div class="staff staff-a"></div>
+            <div class="staff staff-b"></div>
+          </div>
+        </div>
+
+        <aside class="story-panel" id="storyPanel">
+          <p class="kicker" id="storyKicker">01 / 05 运行中的智能检测站</p>
+          <h1 id="storyTitle">让每一座检测站智能运转</h1>
+          <p id="storyBody">
+            安车以检测设备、站端系统、AI 数据能力与监管平台，构建机动车检测站整站智能化解决方案。
+          </p>
+          <ul class="capability-list" id="capabilityList">
+            <li>车辆有序进站</li>
+            <li>检测线持续运行</li>
+            <li>数据实时汇聚</li>
+          </ul>
+          <div class="panel-actions">
+            <a href="#section-entry">进入智能检测站</a>
+            <a href="#section-cta">查看整站方案</a>
+          </div>
+        </aside>
+
+        <div class="scroll-hint">向下滚动，进入检测站</div>
+      </section>
+
+      <section class="scroll-section" id="section-hero" data-step="0"></section>
+      <section class="scroll-section" id="section-entry" data-step="1"></section>
+      <section class="scroll-section" id="section-safety" data-step="2"></section>
+      <section class="scroll-section" id="section-energy" data-step="3"></section>
+      <section class="scroll-section" id="section-cta" data-step="4"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
